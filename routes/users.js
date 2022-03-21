@@ -6,5 +6,5 @@ const usersController = require('../controller/users_controller');
 
 router.get('/profile',usersController.profile);
 
-
+ 
 module.exports=  router;
