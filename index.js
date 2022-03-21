@@ -4,7 +4,7 @@ const port = 8000;
 
 
 // use express Router
-app.use('/',require('./routes'))
+app.use('/',require('./routes/index'))
 
 
 app.listen(port, function(err){
