@@ -1,7 +1,11 @@
 module.exports.home = function(req,res){
-    return res.end('<h1>Express is up for codeial</h1>');
+    console.log(req.cookies);
+    res.cookie('something','hello')
+    return res.render('home',{
+        title:"Home"
+    });
 }
 
 module.exports.actionName = function(req,res){
-    return res.end('<button>Submit it</button> ')
-}
+    return res.end('<button>Submit it</button>')
+} 
