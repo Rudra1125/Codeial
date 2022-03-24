@@ -1,0 +1,34 @@
+#header-container {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  justify-content: space-between; }
+  #header-container #website-name {
+    color: white;
+    padding-left: 2%;
+    margin-top: -1rem; }
+    #header-container #website-name a {
+      text-decoration: none;
+      color: white; }
+    #header-container #website-name a:hover {
+      cursor: pointer;
+      font-size: larger; }
+  #header-container #user-info {
+    color: white;
+    width: 30%;
+    padding-right: 1.5%; }
+    #header-container #user-info ul {
+      color: white;
+      list-style-type: none;
+      display: flex;
+      justify-content: right; }
+      #header-container #user-info ul li {
+        padding-right: 1rem; }
+        #header-container #user-info ul li a {
+          text-decoration: none;
+          color: white; }
+        #header-container #user-info ul li a:hover {
+          cursor: pointer;
+          text-decoration: underline; }

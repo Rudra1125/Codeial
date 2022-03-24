@@ -1,0 +1,38 @@
+footer{
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    #footer-items{
+        display: flex;
+        margin-left: -2%;
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            li{
+                color: white;
+                padding-right: 1rem;
+                font-size: 1.1rem;
+                ul{
+                    margin-left: -5%;
+                    display: block;
+                    li{
+                        a{
+                            
+                            color: white;
+                            text-decoration: none;
+                        }
+                        a:hover{
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

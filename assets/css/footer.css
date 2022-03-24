@@ -1,0 +1,28 @@
+footer {
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto; }
+  footer #footer-items {
+    display: flex;
+    margin-left: -2%; }
+    footer #footer-items ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start; }
+      footer #footer-items ul li {
+        color: white;
+        padding-right: 1rem;
+        font-size: 1.1rem; }
+        footer #footer-items ul li ul {
+          margin-left: -5%;
+          display: block; }
+          footer #footer-items ul li ul li a {
+            color: white;
+            text-decoration: none; }
+          footer #footer-items ul li ul li a:hover {
+            cursor: pointer;
+            text-decoration: underline; }
