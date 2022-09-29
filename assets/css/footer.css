@@ -19,7 +19,8 @@ footer {
         font-size: 1.1rem; }
         footer #footer-items ul li ul {
           margin-left: -5%;
-          display: block; }
+          display: block;
+          text-align: justify; }
           footer #footer-items ul li ul li a {
             color: white;
             text-decoration: none; }
