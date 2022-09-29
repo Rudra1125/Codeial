@@ -34,3 +34,27 @@ module.exports.create = function (req, res) {
     }
   });
 };
+// delete
+module.exports.destroy = function (req, res) {
+  const id=req.params.id.trim()
+  Comment.findById(id, function (err, comment) {
+    if(err){
+      console.log(err, "Unable to fetch the comment");
+      return;  
+    }
+    const idd=req.user.id.trim()
+    if (comment.user == idd) {
+      let postId = comment.post;
+      comment.remove();
+      Post.findByIdAndUpdate(postId, { $pull: { comments: req.params.id } }, function (err, post) {
+        if (err) {
+          console.log(err, "Unable to find and update");
+          return;
+        }
+        return res.redirect('back');
+      })
+    } else {
+      return res.redirect('back');
+    }
+  })
+}
