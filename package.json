@@ -13,6 +13,7 @@
   "author": "Rudra",
   "license": "ISC",
   "dependencies": {
+    "connect-flash": "^0.1.1",
     "connect-mongo": "^4.6.0",
     "connect-mongodb-session": "^3.1.1",
     "cookie-parser": "^1.4.6",
@@ -20,9 +21,11 @@
     "express": "^4.17.3",
     "express-ejs-layouts": "^2.5.1",
     "express-session": "^1.17.2",
+    "flash": "^1.1.0",
     "mongoose": "^6.2.8",
     "node-sass-middleware": "^1.0.1",
     "passport": "^0.5.2",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "sass": "^1.55.0"
   }
 }

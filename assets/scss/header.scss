@@ -1,6 +1,9 @@
 #header-container{
+    
     display: flex;
-    height: 50px;
+    z-index: 2;
+    height: 7vh;
+    position: fixed;
     width: 100%;
     // background-color: rgb(62, 62, 121);
     background-color: #000000;
