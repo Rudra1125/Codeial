@@ -29,9 +29,10 @@ app.use(express.urlencoded());
 app.use(cookieParser());
 
 app.use(express.static('./assets'));
-
+// make the uploads part available to browser
+app.use('/uploads', express.static(__dirname + '/uploads'));
 // use express Router
-app.use(expressLayouts)
+app.use(expressLayouts);
 app.set('layout extractStyles', true);
 app.set('layout extractScripts', true);
 
